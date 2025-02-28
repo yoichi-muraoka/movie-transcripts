@@ -8,7 +8,7 @@ project_root/ <br>
 　│── aud/ ← 🎵 一時音声フォルダ（処理後に削除）<br>
 　│── transcripts/ ← 📝 生成されたテキストを保存 <br>
 　│── apple.py ← 🐍 メインの Python スクリプト <br>
-　│── run_transcription.bat ← 🎯 ダブルクリックで実行できるバッチファイル <br>
+　│── app-runner.bat ← 🎯 ダブルクリックで実行できるバッチファイル <br>
 　│── README.md ← 📖 この説明ファイル
 
 ## 🚀 動作環境
@@ -28,7 +28,7 @@ project_root/ <br>
 ## ▶ 使い方
 1. `mov` フォルダに `.mp4` 動画ファイルを入れる
 2. **ダブルクリックで実行**（Windows）
-   - `run_transcription.bat` を **ダブルクリック** するだけ
+   - `app-runner.bat` を **ダブルクリック** するだけ
 3. transcripts フォルダに 動画名.txt のファイルが生成される
 ※ *apple.py*の15行目にあるモデルの設定を`small`から`medium`や`large`に変更することで、精度が上がりますが、変換に時間を要します。逆に`base`や`tiny`にすることで、精度を下げ、短時間で処理できるようになります。私の環境では、`small`設定で、計25分の動画に12分程度の変換時間を要しました。
 
